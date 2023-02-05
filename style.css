@@ -1,0 +1,280 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --soft-red: hsl(7, 99%, 70%);
+  --yellow: hsl(51, 100%, 49%);
+  --dark-desaturated-cyan: hsl(167, 40%, 24%); /* (graphic design text) */
+  --dark-blue: hsl(198, 62%, 26%); /* (photography text) */
+  --dark-moderate-cyan: hsl(168, 34%, 41%); /* (footer) */
+
+  --very-dark-desaturated-blue: hsl(212, 27%, 19%);
+  --very-dark-grayish-blue: hsl(213, 9%, 39%);
+  --dark-grayish-blue: hsl(232, 10%, 55%);
+  --grayish-blue: hsl(210, 4%, 67%);
+  --white: hsl(0, 0%, 100%);
+}
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  width: 1440px;
+  height: 4174px;
+  margin-top: -1px;
+}
+.header {
+  width: inherit;
+  height: 801px;
+  background: url(./images/desktop/image-header.jpg) no-repeat center;
+  background-size: contain;
+  position: relative;
+}
+.header .banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#logo-header {
+  width: 171px;
+  height: 34px;
+  background: url(./images/logo.svg) no-repeat center;
+  margin-top: 45px;
+}
+.menu {
+  margin-top: 45px;
+}
+.nav {
+  list-style-type: none;
+  display: flex;
+}
+.nav li {
+  color: var(--white);
+  font-family: 'Barlow', sans-serif;
+  font-size: 18px;
+  padding: 15px 25px;
+  margin-right: 25px;
+}
+.nav li:last-child {
+  color: var(--very-dark-desaturated-blue);
+  font-family: 'Fraunces', serif;
+  text-transform: uppercase;
+  border: 1px solid var(--white);
+  border-radius: 50px;
+  background-color: var(--white);
+  margin-right: 48px;
+}
+.title h1 {
+  text-align: center;
+  margin-top: 117px;
+  font-family: 'Fraunces', serif;
+  text-transform: uppercase;
+  color: var(--white);
+  letter-spacing: 6px;
+  font-size: 42px;
+}
+#arrow-down {
+  width: 38px;
+  height: 117px;
+  background: url(./images/icon-arrow-down.svg) no-repeat;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-40px);
+}
+.feature-container {
+  width: 1440px;
+  height: 1800px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: -1px;
+}
+.features {
+  width: 720px;
+  height: 601px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.feature-1, .feature-2 {
+  width: 450px;
+  height: 330px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: left;
+}
+.feature-1 .subtitle, .feature-2 .subtitle {
+  font-family: 'Fraunces', serif;
+  font-weight: 900;
+  font-size: 28px;
+  color: var(--very-dark-desaturated-blue);
+}
+.feature-1 .content, .feature-2 .content {
+  font-size: 18px;
+  font-family: 'Barlow', sans-serif;
+  color: var(--dark-grayish-blue);
+  line-height: 30px;
+}
+.feature-1 .learn-more button, .feature-2 .learn-more button {
+  font-family: 'Fraunces', serif;
+  font-size: 18px;
+  text-transform: uppercase;
+  border: none;
+  outline: none;
+  background-color: var(--white);
+}
+.feature-1 .learn-more button {
+  text-decoration: #fdf5b7 underline 5px;
+}
+.feature-2 .learn-more button {
+  text-decoration: #ffdbd3 underline 5px;
+}
+.feature-1-pic {
+  background: url(./images/desktop/image-transform.jpg) no-repeat center;
+}
+.feature-2-pic {
+  background: url(./images/desktop/image-stand-out.jpg) no-repeat center;
+}
+.feature-3-pic {
+  width: 720px;
+  height: 601px;
+  background: url(./images/desktop/image-graphic-design.jpg) no-repeat center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.feature-4-pic {
+  width: 720px;
+  height: 601px;
+  background: url(./images/desktop/image-photography.jpg) no-repeat center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.feature-3 {
+  width: 380px;
+  height: 200px;
+  margin-bottom: -300px;
+  color: var(--dark-desaturated-cyan);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+}
+.feature-4 {
+  width: 380px;
+  height: 200px;
+  margin-bottom: -300px;
+  color: var(--dark-blue);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+}
+.feature-3 .subtitle, .feature-4 .subtitle {
+  margin-bottom: 30px;
+  font-size: 22px;
+  font-family: 'Fraunces', serif;
+  font-weight: 900;
+}
+.feature-3 .content, .feature-4 .content {
+  font-size: 18px;
+  text-align: center;
+  font-family: 'Barlow', sans-serif;
+  line-height: 30px;
+}
+.client {
+  width: 1440px;
+  height: 778px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.client-title {
+  font-family: 'Fraunces', serif;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  margin-top: 120px;
+  color: var(--dark-grayish-blue);
+}
+.clients-card {
+  width: 1050px;
+  height: 500px;
+  display: flex;
+}
+.client-1, .client-2, .client-3 {
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.avater {
+  width: 74px;
+  height: 74px;
+  border-radius: 50%;
+}
+.avater-1 {
+  background: url(./images/image-emily.jpg) no-repeat center;
+  background-size: contain;
+}
+.avater-2 {
+  background: url(./images/image-thomas.jpg) no-repeat center;
+  background-size: contain;
+}
+.avater-3 {
+  background: url(./images/image-jennie.jpg) no-repeat center;
+  background-size: contain;
+}
+.info {
+  font-size: 18px;
+  text-align: center;
+  font-family: 'Barlow', sans-serif;
+  line-height: 30px;
+
+}
+
+
+
+
+.gallery {
+  width: 1440px;
+  height: 448px;
+  display: flex;
+
+}
+#gallery-1 {
+  width: 360px;
+  height: 448px;
+  background: url(./images/desktop/image-gallery-milkbottles.jpg) no-repeat center;
+  background-size: contain;
+}
+#gallery-2 {
+  width: 360px;
+  height: 448px;
+  background: url(./images/desktop/image-gallery-orange.jpg) no-repeat center;
+  background-size: contain;
+}
+#gallery-3 {
+  width: 360px;
+  height: 448px;
+  background: url(./images/desktop/image-gallery-cone.jpg) no-repeat center;
+  background-size: contain;
+}
+#gallery-4 {
+  width: 360px;
+  height: 448px;
+  background: url(./images/desktop/image-gallery-sugarcubes.jpg);
+}
+.footer {
+  width: 1440px;
+  height: 351px;
+  background-color: var(--dark-moderate-cyan);
+}
