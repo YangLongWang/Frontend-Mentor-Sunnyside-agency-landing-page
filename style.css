@@ -58,15 +58,19 @@ body {
   font-size: 18px;
   padding: 15px 25px;
   margin-right: 25px;
+  cursor: pointer;
 }
 .nav li:last-child {
   color: var(--very-dark-desaturated-blue);
   font-family: 'Fraunces', serif;
   text-transform: uppercase;
-  border: 1px solid var(--white);
   border-radius: 50px;
   background-color: var(--white);
   margin-right: 48px;
+}
+.nav li:last-child:hover {
+  color: var(--white);
+  background-color: hsl(0, 0%, 100%, 0.5);
 }
 .title h1 {
   text-align: center;
@@ -127,12 +131,20 @@ body {
   border: none;
   outline: none;
   background-color: var(--white);
+  cursor: pointer;
 }
 .feature-1 .learn-more button {
-  text-decoration: #fdf5b7 underline 5px;
+  text-decoration: #fdf5b7
+  underline 5px;
+}
+.feature-1 .learn-more button:hover {
+  text-decoration: var(--yellow) underline 5px;
 }
 .feature-2 .learn-more button {
   text-decoration: #ffdbd3 underline 5px;
+}
+.feature-2 .learn-more button:hover {
+  text-decoration: var(--soft-red) underline 5px;
 }
 .feature-1-pic {
   background: url(./images/desktop/image-transform.jpg) no-repeat center;
@@ -295,11 +307,6 @@ body {
   align-items: center;
   position: relative;
 }
-/* #logo-footer {
-}
-#logo-footer img {
-  filter: drop-shadow(0 40px 0 var(--dark-desaturated-cyan));
-} */
 .menu-footer ul {
   list-style-type: none;
   display: flex;
@@ -308,9 +315,13 @@ body {
   color: var(--dark-desaturated-cyan);
   font-family: 'Barlow', sans-serif;
   font-size: 18px;
+  cursor: pointer;
 }
 .menu-footer ul li:nth-child(2) {
   margin: 0 30px;
+}
+.menu-footer ul li:hover {
+  color: var(--white);
 }
 .icons {
   width: 180px;
@@ -320,24 +331,38 @@ body {
   align-items: center;
   margin-top: 30px;
   margin-bottom: 30px;
+  position: relative;
+  overflow: hidden;
 }
 #facebook {
   width: 17px;
   height: 17px;
-  background: url(./images/icon-facebook.svg) no-repeat center;
+  color: var(--dark-desaturated-cyan);
 }
 #instagram {
   width: 17px;
   height: 17px;
-  background: url(./images/icon-instagram.svg) no-repeat center;
+  color: var(--dark-desaturated-cyan);
 }
 #twitter {
   width: 17px;
   height: 17px;
-  background: url(./images/icon-twitter.svg) no-repeat center;
+  color: var(--dark-desaturated-cyan);
 }
 #pinterest {
   width: 17px;
   height: 17px;
-  background: url(./images/icon-pinterest.svg) no-repeat center;
+  color: var(--dark-desaturated-cyan);
+}
+#facebook:hover {
+  color: var(--white);
+}
+#instagram:hover {
+  color: var(--white);
+}
+#twitter:hover {
+  color: var(--white);
+}
+#pinterest:hover {
+  color: var(--white);
 }
