@@ -381,7 +381,8 @@ body {
   }
   .header {
     height: 540px;
-    background-size: cover;
+    background: url(./images/mobile/image-header.jpg) no-repeat center;
+    background-size: contain;
   }
   #logo-header {
     margin-top: 30px;
@@ -428,18 +429,24 @@ body {
     grid-row: 1;
     width: 375px;
     height: 312px;
-    background-size: cover;
+    background: url(./images/mobile/image-transform.jpg) no-repeat center;
+    background-size: contain;
   }
   .feature-2-pic {
     width: 375px;
     height: 312px;
-    background-size: cover;
+    background: url(./images/mobile/image-stand-out.jpg) no-repeat center;
+    background-size: contain;
   }
   .feature-3-pic {
     width: 375px;
+    background: url(./images/mobile/image-graphic-design.jpg) no-repeat center;
+    background-size: contain;
   }
   .feature-4-pic {
     width: 375px;
+    background: url(./images/mobile/image-photography.jpg) no-repeat center;
+    background-size: contain;
   }
   .feature-3 {
     width: 375px;
@@ -492,26 +499,31 @@ body {
     flex-wrap: wrap;
   }
   #gallery-1 {
-    width: 187.5px;
-    height: 187.5px;
-    background-size: cover;
+    width: 187px;
+    height: 187px;
+    background: url(./images/mobile/image-gallery-milkbottles.jpg)no-repeat center;
+    background-size: contain;
   }
   #gallery-2 {
-    width: 187.5px;
-    height: 187.5px;
-    background-size: cover;
+    width: 187px;
+    height: 187px;
+    background: url(./images/mobile/image-gallery-orange.jpg)no-repeat center;
+    background-size: contain;
   }
   #gallery-3 {
-    width: 187.5px;
-    height: 187.5px;
-    background-size: cover;
+    width: 187px;
+    height: 187px;
+    background: url(./images/mobile/image-gallery-cone.jpg)no-repeat center;
+    background-size: contain;
   }
   #gallery-4 {
-    width: 187.5px;
-    height: 187.5px;
-    background-size: cover;
+    width: 187px;
+    height: 187px;
+    background: url(./images/mobile/image-gallery-sugar-cubes.jpg)no-repeat center;
+    background-size: contain;
   }
   .footer {
     width: 375px;
+    margin-top: -1px;
   }
 }
