@@ -34,8 +34,7 @@ body {
   background-size: contain;
   position: relative;
 }
-.banner {
-  width: inherit;
+.header .banner {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -415,7 +414,7 @@ body {
     position: absolute;
     top: 0;
     right: 0;
-    transform: translate(0, -100%);
+    transform: translate(0, -95%);
   }
   .nav {
     width: 330px;
@@ -433,13 +432,13 @@ body {
     color: var(--dark-grayish-blue);
     margin-right: 0;
   }
-  .nav li:last-child {
+  .nav li:nth-child(4) {
     background-color: var(--yellow);
     margin-right: 0;
-  }
-  .nav li:last-child:hover {
-    color: var(--white);
-    background-color: hsl(0, 0%, 100%, 0.5);
+    color: var(--very-dark-desaturated-blue);
+    font-family: 'Fraunces', serif;
+    text-transform: uppercase;
+    border-radius: 50px;
   }
   .title h1 {
     margin-top: 50px;
