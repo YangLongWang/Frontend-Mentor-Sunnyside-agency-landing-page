@@ -1,15 +1,12 @@
 const banner = document.querySelector(".banner");
 const menu = document.querySelector(".menu");
 const nav = document.querySelector(".nav");
-const menuBtn = document.createElement("div");
-const triangle = document.createElement("div");
 
 function resize() {
-  if (
-    // window.resizeTo(window.screen.availWidth <= 375, window.screen.availHeight)
-    // ||
-    window.screen.availWidth <= 375
-  ) {
+  if (window.screen.availWidth <= 375) {
+    const menuBtn = document.createElement("div");
+    const triangle = document.createElement("div");
+
     menu.classList.add("hidden");
     menuBtn.classList.add("btn-menu");
     triangle.classList.add("triangle");
@@ -20,9 +17,6 @@ function resize() {
       menu.classList.toggle("hidden");
       nav.appendChild(triangle);
     });
-  } else {
-    banner.removeChild(banner.lastChild);
-    nav.removeChild(nav.lastChild);
   }
 }
 
